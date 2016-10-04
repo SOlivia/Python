@@ -1,0 +1,16 @@
+import fresh_tomatoes
+import media
+
+legally_blonde = media.Movie("Legally blond",
+                      "A romantic comedy movie that motivate ldies fight for their dreams",
+                      "https://i.jeded.com/i/legally-blonde.10525.jpg",
+                      "https://www.youtube.com/watch?v=xs3_hNYAVRw")
+
+finding_nemo = media.Movie("Finding Nemo",
+                      "An adventurous young clowfish",
+                      "http://www.hmns.org/wp-content/uploads/2016/04/finding-nemo.jpeg",
+                      "https://www.youtube.com/watch?v=ndq9-vmD058")
+
+#legally_blonde.show_trailer()
+movies = [legally_blonde,finding_nemo]
+fresh_tomatoes.open_movies_page(movies)
