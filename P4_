@@ -1,0 +1,24 @@
+import turtle
+
+def draw_side(obj,angle):
+     obj.left(10)
+     for x in range(0, 4):
+        obj.forward(100)
+        obj.right(90)
+
+def draw_init():
+
+    olivia = turtle.Turtle()
+
+    
+    angle = 0
+
+    for x in range(0, 37):
+        draw_side(olivia,angle)
+        angle = angle + 10
+
+    
+    olivia.right(100)
+    olivia.forward(250)
+
+draw_init()
